@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Title of the document</title>
+</head>
+
+<body>
+<div id="testas">TESTAS TESTAS</div>
+</body>
+<script>
+	function print_object_inf(obj){
+		var res = '<ul>';
+		
+		for (i in obj)
+			res += '<li><b>' + i + '</b>: ' + obj[i] + '</li>';
+		
+		res += '</ul>';
+		document.write(res);
+	}
+	
+	var test = document.querySelector('#testas');
+	print_object_inf(test);
+</script>
+</html>
